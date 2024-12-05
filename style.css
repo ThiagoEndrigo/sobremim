@@ -1,0 +1,121 @@
+/* Variáveis de cores */
+:root {
+  --background-color: #000;
+  --primary-color: #22D4FD;
+  --text-color: #fff;
+  --text-secondary-color: #ccc;
+  --font-family: 'Montserrat', sans-serif;
+}
+
+/* Corpo e Fonte Principal */
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Header */
+header {
+  padding: 20px 0;
+  background-color: var(--background-color);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--text-color);
+}
+
+/* Seção principal */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero .text-content {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.hero h1 span {
+  color: var(--primary-color);
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: var(--text-secondary-color);
+  line-height: 1.6;
+}
+
+.hero .image-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .image-content img {
+  width: 300px;
+  height: auto;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Botões */
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.buttons .btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.buttons .btn:hover {
+  background-color: #009ace;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: bold;
+}
